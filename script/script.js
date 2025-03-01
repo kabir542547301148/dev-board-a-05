@@ -1,6 +1,6 @@
 const completeButtons= document.querySelectorAll(".complete-btn");
 const currentDateTime = new Date();
-const formattedDateTime = currentDateTime.toLocaleString(); 
+const formattedDateTime = currentDateTime.toLocaleString();  // Local format
 console.log(formattedDateTime);
 for(let i = 0; i < completeButtons.length; i++){
     const completeBtn= completeButtons[i];
@@ -32,9 +32,12 @@ for(let i = 0; i < completeButtons.length; i++){
 }
 document.getElementById("clear-logs").addEventListener("click", function(event){
     const logs= document.getElementsByClassName("logs");
-    for(let i= 0; i < log.length; i++){
+    for(let i= 0; i < logs.length; i++){
         const log= logs[i];
         log.classList.add("hidden");
     }
 
 });
+
+
+
