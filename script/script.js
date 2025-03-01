@@ -1,6 +1,6 @@
 const completeButtons= document.querySelectorAll(".complete-btn");
 const currentDateTime = new Date();
-const formattedDateTime = currentDateTime.toLocaleString();  // Local format
+const formattedDateTime = currentDateTime.toLocaleString();
 console.log(formattedDateTime);
 for(let i = 0; i < completeButtons.length; i++){
     const completeBtn= completeButtons[i];
@@ -45,6 +45,9 @@ document.getElementById('discover-new-page').addEventListener('click', function(
 
 })
 
-document.getElementById('back-main-page').addEventListener('click', function() {
-    window.location.href=('index.html');
-  });
+const colorBtn = document.getElementById('bg-image');
+
+colorBtn.addEventListener('click',  function(){
+    const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+    document.body.style.backgroundColor = randomColor;
+});
