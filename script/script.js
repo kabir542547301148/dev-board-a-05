@@ -40,4 +40,11 @@ document.getElementById("clear-logs").addEventListener("click", function(event){
 });
 
 
+document.getElementById('discover-new-page').addEventListener('click', function() {
+    window.location.href=('main.html');
 
+})
+
+document.getElementById('back-main-page').addEventListener('click', function() {
+    window.location.href=('index.html');
+  });
