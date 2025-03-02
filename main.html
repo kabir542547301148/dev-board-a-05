@@ -14,11 +14,17 @@
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
      
+     <style>
+        .font-poppins {
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
+      font-style: normal;}
+      </style>
 </head>
-<body class="container mx-auto">
+<body class="container mx-auto bg-[#F4F7FF] font-poppins">
     <header>
      
-        <nav class="flex justify-between py-2 px-2 bg-white rounded-md">
+        <nav class="flex justify-between py-2 px-2 bg-gray-200 rounded-md ">
             <div class="flex justify-center">
                 <img class="" src="assets/logo.png" alt="">
         <h1 class="text-3xl font-bold mt-4 ml-2 "> <span class="font-light">Dev</span>Board</h1>
@@ -31,33 +37,54 @@
      <section class="my-12">
         <h1 class="text-3xl font-bold text-center">Blogs</h1>
 
-        <div class="collapse collapse-arrow bg-base-100 border border-base-300 mt-8">
+        <div class="collapse collapse-arrow bg-base-100 border border-base-300 mt-8 border-b-slate-400 border-dotted">
             <input type="radio" name="my-accordion-2" checked="checked" />
             <div class="collapse-title font-semibold">Question-1: What are the different ways to select an element in the DOM?</div>
-            <div class="collapse-content text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus minima, neque qui ut repudiandae tempore ipsa esse quisquam nihil consequatur.</div>
+            <div class="collapse-content text-sm">1. By ID
+              Method: document.getElementById(id) <br>
+              2. By Class Name
+              Method: document.getElementsByClassName(className) <br>
+              3. By Tag Name
+              Method: document.getElementsByTagName(tagName) <br>
+              4. Custom Attributes
+              Method: Use attribute selectors with querySelector or querySelectorAll.
+              5. Using the Parent-Child Relationship <br>
+              6. By Name Attribute  <br>
+              Method: document.getElementsByName(name)</div>
           </div>
-          <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+          <div class="collapse collapse-arrow bg-base-100 border border-base-300 border-b-slate-400 border-dotted">
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title font-semibold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</div>
-            <div class="collapse-content text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed similique natus ex quia quasi cum voluptatibus et ea explicabo eveniet.</div>
+            <div class="collapse-content text-sm">1. innerhtml is used to select html tag. lke as h1,p,div,a etc.
+              <br>
+              2.innertext is used in input field to assign an items <br>
+              3.text content is used for text content inside html tags.
+            </div>
           </div>
-          <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+          <div class="collapse collapse-arrow bg-base-100 border border-base-300 border-b-slate-400 border-dotted">
             <input type="radio" name="my-accordion-2" />
             <div class="collapse-title font-semibold">Question-3: What is event delegation in the DOM?</div>
-            <div class="collapse-content text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit vero repudiandae aliquam cupiditate nulla, beatae ullam sint minus ducimus nihil.</div>
+            <div class="collapse-content text-sm">Event delegation in the DOM is a technique where a single event listener is attached to a parent element to manage events for its child elements, even if those children are dynamically added later. Instead of attaching event listeners to multiple child elements individually, the parent element listens for events, taking advantage of event propagation (bubbling).</div>
 
 
-            <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+            <div class="collapse collapse-arrow bg-base-100 border border-base-300 border-b-slate-400 border-dotted">
                 <input type="radio" name="my-accordion-2" />
                 <div class="collapse-title font-semibold">Question-4: What is event bubbling in the DOM?</div>
-                <div class="collapse-content text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit vero repudiandae aliquam cupiditate nulla, beatae ullam sint minus ducimus nihil.</div>
+                <div class="collapse-content text-sm">Event bubbling in the DOM is a mechanism where an event starts at the element where it occurs and propagates (or "bubbles up") through its ancestors in the DOM hierarchy, all the way to the document root.</div>
 
 
 
-                <div class="collapse collapse-arrow bg-base-100 border border-base-300">
+                <div class="collapse collapse-arrow bg-base-100 border border-base-300 border-b-slate-400 border-dotted">
                     <input type="radio" name="my-accordion-2" />
                     <div class="collapse-title font-semibold">Question-5: How do you create, add, and remove elements using JavaScript?</div>
-                    <div class="collapse-content text-sm">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit vero repudiandae aliquam cupiditate nulla, beatae ullam sint minus ducimus nihil.</div>
+                    <div class="collapse-content text-sm">1. Creating Elements
+                      Use the document.createElement() method to create a new element. <br>
+                      2.const parent = document.getElementById('parent');
+                      parent.appendChild(newElement); <br>
+                      3.const parent = document.getElementById('parent');
+                      const child = document.getElementById('child');
+                      parent.removeChild(child);
+                      </div>
 
 
            
