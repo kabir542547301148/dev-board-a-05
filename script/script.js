@@ -44,6 +44,20 @@ for(let i = 0; i < completeButtons.length; i++){
 }
 
 
+        
+
+const targetDiv = document.querySelector('.localFullDate');
+
+
+const today = new Date();
+
+
+const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+const formattedDate = today.toLocaleDateString('en-US', options);
+
+if (targetDiv) {
+    targetDiv.textContent = formattedDate;
+  }
     
 document.getElementById("clear-logs").addEventListener("click", function(event){
     const logs= document.getElementsByClassName("logs");
